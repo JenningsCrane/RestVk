@@ -22,6 +22,18 @@ public class AddressEntity {
 
     private String city;
 
+    @Override
+    public String toString() {
+        return "AddressEntity{" +
+                "id=" + id +
+                ", street='" + street + '\'' +
+                ", suite='" + suite + '\'' +
+                ", city='" + city + '\'' +
+                ", zipcode='" + zipcode + '\'' +
+                ", geoPosition=" + geoPosition +
+                '}';
+    }
+
     private String zipcode;
 
     @OneToOne

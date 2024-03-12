@@ -20,5 +20,15 @@ public class CompanyEntity {
 
     private String catchPhrase;
 
+    @Override
+    public String toString() {
+        return "CompanyEntity{" +
+                "id=" + id +
+                ", name='" + name + '\'' +
+                ", catchPhrase='" + catchPhrase + '\'' +
+                ", bs='" + bs + '\'' +
+                '}';
+    }
+
     private String bs;
 }

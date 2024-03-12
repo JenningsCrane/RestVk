@@ -9,7 +9,7 @@ import lombok.*;
 @NoArgsConstructor
 @AllArgsConstructor
 @Entity
-@Table(name = "user")
+@Table(name = "users")
 public class UserEntity {
 
     @Id
@@ -18,7 +18,6 @@ public class UserEntity {
 
     private String name;
 
-    @Column(name = "username")
     private String userName;
 
     private String email;
@@ -32,4 +31,18 @@ public class UserEntity {
 
     @OneToOne
     private CompanyEntity company;
+
+    @Override
+    public String toString() {
+        return "UserEntity{" +
+                "id=" + id +
+                ", name='" + name + '\'' +
+                ", userName='" + userName + '\'' +
+                ", email='" + email + '\'' +
+                ", address=" + address +
+                ", phone='" + phone + '\'' +
+                ", website='" + website + '\'' +
+                ", company=" + company +
+                '}';
+    }
 }

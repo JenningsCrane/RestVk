@@ -19,4 +19,13 @@ public class GeoEntity {
     private Double lat;
 
     private Double lng;
+
+    @Override
+    public String toString() {
+        return "GeoEntity{" +
+                "id=" + id +
+                ", lat=" + lat +
+                ", lng=" + lng +
+                '}';
+    }
 }
